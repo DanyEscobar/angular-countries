@@ -1,0 +1,62 @@
+<h2>Countries</h2>
+<hr>
+
+<ul class="list-group">
+  <!-- <li
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    Home Page
+  </li>
+  <li
+    routerLink="about"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    About Page
+  </li>
+  <li
+    routerLink="contact"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    Contact Page
+  </li> -->
+  <li
+    routerLink="countries/by-capital"
+    routerLinkActive="active"
+    class="list-group-item"
+    role="button"
+    (click)="searchBy('capital')"
+  >
+    By Capital
+  </li>
+  <li
+    routerLink="countries/by-country"
+    routerLinkActive="active"
+    class="list-group-item"
+    role="button"
+    (click)="searchBy('name')"
+  >
+    By Country
+  </li>
+  <li
+    routerLink="countries/by-region"
+    routerLinkActive="active"
+    class="list-group-item"
+    role="button"
+    (click)="searchBy('region')"
+  >
+    By Region
+  </li>
+  <!-- <li
+    routerLink="countries/by/"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    By Region Page
+  </li> -->
+
+</ul>
